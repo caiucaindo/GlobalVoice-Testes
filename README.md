@@ -10,3 +10,21 @@
 ## Purpose
 
 The purpose of the GlobalVoice Testes project is to provide a framework for testing the GlobalVoice application. This project aims to facilitate the development and deployment of testing protocols to ensure the quality and reliability of the application.
+
+# Pra testar no pC
+
+- 1. Clone o repositório
+    git clone https://github.com/caiucaindo/GlobalVoice-Testes.git
+    cd GlobalVoice-Testes
+
+- 2. Execute o setup (cria venv, instala dependências, cria pasta results)
+    setup_environment.bat
+
+- 3. Ative o ambiente virtual
+    .\venv\Scripts\activate
+
+- 4. Teste um modelo específico (10 segundos do microfone)
+    python whisper_benchmark.py faster-whisper
+
+- 5. Ou teste todos os 3 modelos
+    python whisper_benchmark.py all --duration 15 --language pt
