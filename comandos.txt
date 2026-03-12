@@ -1,0 +1,19 @@
+- whisper_benchmark_complete.py - Para Faster Whisper e OpenAI Whisper
+
+	python whisper_benchmark_complete.py --list-models
+	python whisper_benchmark_complete.py --model faster-whisper --duration 10
+	python whisper_benchmark_complete.py --model openai-whisper --duration 10
+
+
+- whisperx_benchmark.py - Só para WhisperX (sem warnings!)
+	python whisperx_benchmark.py --duration 10 --output results/whisperx_result.json
+	python whisperx_benchmark.py --duration 10 --use-gpu
+
+
+
+📊 O que o script vai medir:
+⏱️ Tempo de processamento (quanto tempo leva)
+🎯 Real-Time Factor (quantas vezes mais rápido que o áudio)
+💾 Memória utilizada (em MB)
+📦 Chunks processados
+🖥️ Dispositivo usado (CPU/GPU)

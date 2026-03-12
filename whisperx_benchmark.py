@@ -103,15 +103,15 @@ class WhisperXBenchmark:
 ╔════════════════════════════════════════╗
 ║        BENCHMARK RESULT                ║
 ╟────────────────────────────────────────╢
-║ Model:           {result['model']:<19} ║
-║ Device:          {result['device']:<19} ║
+║ Model:           {result['model']:<21} ║
+║ Device:          {result['device']:<21} ║
 ║ Audio Duration:  {result['audio_duration_s']:<19} s ║
 ║ Processing Time: {result['processing_time_s']:<19} s ║
 ║ Real-Time Factor:{result['real_time_factor']:<19} x ║
-║ Language:        {result['language']:<19} ║
+║ Language:        {result['language']:<21} ║
 ╟────────────────────────────────────────╢
 ║ Transcription:                         ║
-║ {result['transcription'][:38]:<39} ║
+║ {result['transcription'][:38]:<38} ║
 ╚════════════════════════════════════════╝
         """)
     
